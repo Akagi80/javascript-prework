@@ -41,3 +41,45 @@ else if(playerInput == '3'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+//Score
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+  }
+
+else if( computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Wygrywam! Nie łam się, spróbuj ponownie!');
+}
+
+else if( computerMove == 'kamień' && playerMove == 'kamień'){
+    printMessage('Mamy remis! Może kolejna rundka?');
+}
+
+else if( computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+}
+
+else if( computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Wygrywam! Nie łam się, spróbuj ponownie!');
+}
+
+else if( computerMove == 'papier' && playerMove == 'papier'){
+    printMessage('Mamy remis! Może kolejna rundka?');
+}
+
+else if( computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+}
+
+else if( computerMove == 'nożyce' && playerMove == 'papier'){
+    printMessage('Wygrywam! Nie łam się, spróbuj ponownie!');
+}
+
+else if( computerMove == 'nożyce' && playerMove == 'nożyce'){
+    printMessage('Mamy remis! Może kolejna rundka?');
+}
+
+else if( playerMove = 'nieznany ruch'){
+    printMessage('Wybrałeś złą liczbę. Dozwolone to: 1, 2 lub 3');
+}
