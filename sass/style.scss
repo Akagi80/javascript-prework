@@ -1,34 +1,63 @@
 $font-text: 'Inconsolata', monospace;
 $font-header: 'Signika', sans-serif;
 $color-one: #ffffff;
-$color-two: #0097e6;
-$color-three: #ff5252;
+$color-two: #139ae2;
+$color-three: #f06464;
 
 
 body {
     font-family: $font-text;
+    color: $color-one;
+    font-size: 24px;
 }
 
 .container {
     max-width: 1140px;
+    min-height: 500px;
     padding: 0 20px;
     margin: 0 auto;
     padding: 36px 12px;
-    background-color: blue;
+    background-color: $color-two;
+    text-align: center;
+    border: 12px solid $color-three;
     .welcome {
-        color: $color-one;
-        text-align: center;
         h2 {
             font-family: $font-header;
             font-size: 48px;
         }
-        p {
-            border: 2px solid $color-one;
-            margin: 0 48px;
+        .rulez {
+            font-size: 18px;
+            margin: 0 68px;
             padding: 12px 0;
+            border: 2px solid $color-one;
             border-left: none;
             border-right: none;
         }
+        .info {
+            margin-top: 36px;
+            font-size: 28px;
+        }
+    }
+    .btns {
+        margin: 48px;
+        .btn {
+            background-color: $color-one;
+            color: $color-two;
+            border: 2px solid $color-two;
+            height: 68px;
+            width: 124px;
+            border-radius: 25px;
+            transition: 1s;
+            outline: 0;
+            &:hover {
+                color: $color-one;
+                background-color: $color-three;
+            }
+            i {
+                font-size: 36px;
+            }
+        }
     }
 }
+
 
